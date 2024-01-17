@@ -8,7 +8,7 @@ const Navbar = () => {
           href="#home"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img src="watdig.png" className="h-8" alt="Logo" />
+          <img src="src/components/watdig.png" className="h-8" alt="Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-darkyellow">
             WatDig
           </span>
