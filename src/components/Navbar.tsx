@@ -1,60 +1,74 @@
-const AboutUs = () => {
+import React from "react";
+
+const Navbar = () => {
   return (
-    <section id="about" className="bg-gray-800 text-white py-12 w-full">
-      <div className="max-w-screen-xl mx-auto px-4 lg:px-0">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-semibold uppercase">About Us</h2>
-          <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-            Discover more about our mission, vision, and values.
-          </p>
+    <nav className="bg-black dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a
+          href="#home"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          {/* Replace with your logo */}
+          <img
+            src="https://flowbite.com/docs/images/logo.svg"
+            className="h-8"
+            alt="Logo"
+          />
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-darkyellow">
+            WatDig
+          </span>
+        </a>
+        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            type="button"
+            className="text-white bg-darkyellow hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-darkyellow dark:hover:bg-yellow-600 dark:focus:ring-yellow-800"
+          >
+            Get started
+          </button>
+          {/* ... other buttons */}
         </div>
-
-        <div className="flex flex-wrap justify-center">
-          <div className="px-4 lg:px-20 py-6 w-full md:w-1/3">
-            <div className="text-center mb-6">
-              <img
-                src="path-to-your-image.jpg"
-                alt="Image"
-                className="mx-auto w-20 h-20 mb-3 rounded-full shadow-lg"
-              />
-              <h5 className="text-xl font-semibold">Our Mission</h5>
-              <p className="mt-2 mb-4 text-gray-500">
-                Brief description of your mission.
-              </p>
-            </div>
-          </div>
-
-          <div className="px-4 lg:px-20 py-6 w-full md:w-1/3">
-            <div className="text-center mb-6">
-              <img
-                src="path-to-another-image.jpg"
-                alt="Image"
-                className="mx-auto w-20 h-20 mb-3 rounded-full shadow-lg"
-              />
-              <h5 className="text-xl font-semibold">Our Vision</h5>
-              <p className="mt-2 mb-4 text-gray-500">
-                A short explanation of your vision.
-              </p>
-            </div>
-          </div>
-
-          <div className="px-4 lg:px-20 py-6 w-full md:w-1/3">
-            <div className="text-center mb-6">
-              <img
-                src="path-to-a-third-image.jpg"
-                alt="Image"
-                className="mx-auto w-20 h-20 mb-3 rounded-full shadow-lg"
-              />
-              <h5 className="text-xl font-semibold">Our Values</h5>
-              <p className="mt-2 mb-4 text-gray-500">
-                Key values that your organization upholds.
-              </p>
-            </div>
-          </div>
+        <div
+          className="hidden w-full md:flex items-center justify-between md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-black dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a
+                href="#about"
+                className="block py-2 px-3 text-darkyellow rounded md:bg-transparent md:text-darkyellow md:p-0 dark:text-darkyellow"
+              >
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="#sponsors"
+                className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-darkyellow md:p-0 dark:hover:text-darkyellow dark:text-white dark:hover:bg-gray-700"
+              >
+                Sponsors
+              </a>
+            </li>
+            <li>
+              <a
+                href="#join"
+                className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-darkyellow md:p-0 dark:hover:text-darkyellow dark:text-white dark:hover:bg-gray-700"
+              >
+                Join Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-darkyellow md:p-0 dark:hover:text-darkyellow dark:text-white dark:hover:bg-gray-700"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
   );
 };
 
-export default AboutUs;
+export default Navbar;
