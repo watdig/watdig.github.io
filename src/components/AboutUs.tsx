@@ -2,7 +2,7 @@ const AboutUs = () => {
   return (
     <section
       id="about"
-      className="bg-gradient-to-r from-amber-50 to-blue-100 text-gray-800 py-12 w-full relative pt-24"
+      className="bg-gradient-to-b from-amber-50 to-blue-100 text-gray-800 py-12 w-full relative pt-24"
     >
       <div className="max-w-screen-xl mx-auto px-4 lg:px-0 relative z-10">
         <div className="text-center mb-12">

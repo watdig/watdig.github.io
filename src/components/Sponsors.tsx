@@ -1,6 +1,9 @@
 const Sponsors = () => {
   return (
-    <section id="sponsors" className="bg-gray-200 text-black py-12 w-full">
+    <section
+      id="sponsors"
+      className="bg-gradient-to-b from-blue-100 to-sky-50 text-black py-12 w-full"
+    >
       <div className="max-w-screen-xl mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold uppercase mb-6">Our Sponsors</h2>
         <p className="mb-6">
@@ -23,7 +26,7 @@ const Sponsors = () => {
         {/* Sponsor Us button */}
         <a
           href="#contact"
-          className="inline-block bg-darkyellow text-black font-bold py-3 px-8 rounded-lg uppercase tracking-wider hover:bg-opacity-90 transition duration-300 ease-in-out"
+          className="text-xl inline-block bg-darkyellow text-black font-bold py-5 px-12 rounded-lg uppercase tracking-wider hover:bg-opacity-90 transition duration-300 ease-in-out"
         >
           Sponsor Us
         </a>
