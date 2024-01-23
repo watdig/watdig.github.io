@@ -1,16 +1,16 @@
 const JoinUs = () => {
   return (
-    <section id="join" className="bg-gray-900 text-white py-12">
+    <section id="join" className="h-full bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="md:flex md:items-center md:justify-between">
           {/* Side note */}
           <div className="md:w-1/3 mb-6 md:mb-0">
-            <h2 className="text-3xl font-bold mb-4">
-              Interested in joining our team?
+            <h2 className="text-4xl font-bold mb-4">
+              Interested in joining our team or sponsoring us?
             </h2>
-            <p className="text-gray-400">
-              We're looking for talented individuals who share our passion for
-              excellence and innovation.
+            <p className="text-xl text-gray-400">
+              Fill out our form! We are always looking for sponsors and
+              innovative people to join our team.
             </p>
           </div>
 

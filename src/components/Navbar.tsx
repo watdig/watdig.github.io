@@ -1,13 +1,13 @@
 const Navbar = () => {
   return (
-    <nav className="bg-black dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <nav className="bg-grey-200 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a
           href="#home"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img src="src/components/watdig.png" className="h-8" alt="Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-darkyellow">
+          <img src="src/assets/logo.png" className="h-8" alt="Logo" />
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-300">
             WatDig
           </span>
         </a>
@@ -27,7 +27,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#about"
-                className="block py-2 px-3 text-darkyellow rounded md:bg-transparent md:text-darkyellow md:p-0 dark:text-darkyellow"
+                className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-darkyellow md:p-0 dark:hover:text-darkyellow dark:text-white dark:hover:bg-gray-700"
               >
                 About Us
               </a>

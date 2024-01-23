@@ -1,3 +1,4 @@
+import Landing from "./components/landing";
 import Navbar from "./components/Navbar";
 import AboutUs from "./components/AboutUs";
 import Sponsors from "./components/Sponsors";
@@ -7,6 +8,7 @@ import Contact from "./components/Contact";
 const App = () => {
   return (
     <div className="App">
+      <Landing />
       <Navbar />
       <AboutUs />
       <Sponsors />

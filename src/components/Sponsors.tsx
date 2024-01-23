@@ -1,6 +1,6 @@
 const Sponsors = () => {
   return (
-    <section id="sponsors" className="bg-gray-900 text-white py-12 w-full">
+    <section id="sponsors" className="bg-gray-200 text-black py-12 w-full">
       <div className="max-w-screen-xl mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold uppercase mb-6">Our Sponsors</h2>
         <p className="mb-6">
@@ -10,14 +10,14 @@ const Sponsors = () => {
         {/* Sponsor logos */}
         <div className="flex flex-wrap items-center justify-center gap-8 mb-8">
           <img
-            src="path-to-logo1.png"
-            alt="Sponsor Logo 1"
-            className="h-12 md:h-16"
+            src="./src/assets/Clearpath:Rockwell.jpeg"
+            alt="Clearpath Robotics"
+            className="h-24 md:h-32"
           />
           <img
-            src="path-to-logo2.png"
-            alt="Sponsor Logo2"
-            className="h-12 md:h-16"
+            src="./src/assets/qqlf.jpeg"
+            alt="QQLF Consultants"
+            className="h-24 md:h-32"
           />
         </div>
         {/* Sponsor Us button */}

@@ -3,38 +3,38 @@ const Footer = () => {
     <footer id="contact" className="bg-gray-900 text-white py-8">
       <div className="flex justify-center items-center flex-col">
         <p className="text-2xl font-bold mb-2">Contact Us</p>
-        <div className="flex space-x-4 mb-4">
+        <div className="flex text-white space-x-4 mb-4">
           {/* Email */}
           <a
-            href="mailto:email@example.com"
-            className="hover:text-darkyellow transition-colors duration-300"
+            href="mailto:watdig.team@gmail.com"
+            className="text-white hover:text-darkyellow transition-colors duration-300"
           >
-            email@example.com
+            watdig.team@gmail.com
           </a>
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/company/watdig/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-darkyellow transition-colors duration-300"
+            className="text-white hover:text-darkyellow transition-colors duration-300"
           >
             LinkedIn
           </a>
           {/* GitHub */}
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/watdig"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-darkyellow transition-colors duration-300"
+            className="text-white hover:text-darkyellow transition-colors duration-300"
           >
             GitHub
           </a>
           {/* Join Us */}
           <a
             href="#join"
-            className="hover:text-darkyellow transition-colors duration-300"
+            className="text-white hover:text-darkyellow transition-colors duration-300"
           >
-            Join Us
+            Contact Us
           </a>
         </div>
       </div>
