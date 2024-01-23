@@ -9,7 +9,6 @@ const Sponsors = () => {
 
         {/* Sponsor logos */}
         <div className="flex flex-wrap items-center justify-center gap-8 mb-8">
-          {/* Replace 'path-to-logo' with actual logo paths and add as many as needed */}
           <img
             src="path-to-logo1.png"
             alt="Sponsor Logo 1"
