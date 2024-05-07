@@ -1,14 +1,13 @@
-import { Link } from "react-router-dom";
+import React from "react";
 
-const Sponsors = () => {
+const Sponsors: React.FC = () => {
   return (
-    <section
-      id="sponsors"
-      className="bg-gradient-to-b from-blue-100 to-sky-50 text-black py-12 w-full"
-    >
-      <div className="max-w-screen-xl mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold uppercase mb-6">Our Sponsors</h2>
-        <p className="mb-6">
+    <section id="sponsors" className="bg-zinc-900 text-black py-12 w-full">
+      <div className="max-w-screen-xl mx-auto px-4 text-center mt-30">
+        <h2 className="text-4xl text-white font-bold uppercase mb-6">
+          Our Sponsors
+        </h2>
+        <p className="text-gray-300 mb-6">
           We are proudly supported by these amazing brands:
         </p>
 
@@ -26,12 +25,18 @@ const Sponsors = () => {
           />
         </div>
         {/* Sponsor Us button */}
-        <Link
-          to="/sponsors"
-          className="text-xl inline-block bg-darkyellow text-black font-bold py-5 px-12 rounded-lg uppercase tracking-wider hover:bg-opacity-90 transition duration-300 ease-in-out"
+        <a
+          onClick={openPdfWindow}
+          className="bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 focus:outline-none focus:ring-4 focus:ring-purple-300 mr-4"
         >
-          Sponsor Us
-        </Link>
+          Sponsorship Package
+        </a>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdkptvps-J3JbFfeM7OXsQ-lRmOiDNIsEi0jtye4Wi0ilp2WQ/viewform?usp=sf_link"
+          className="bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 focus:outline-none focus:ring-4 focus:ring-purple-300"
+        >
+          Pledge Form
+        </a>
 
         {/* Additional information or call-to-action */}
         <p className="mt-6 text-gray-400">
@@ -40,7 +45,12 @@ const Sponsors = () => {
         </p>
       </div>
     </section>
+    // Function to open a PDF in a subwindow
   );
 };
 
 export default Sponsors;
+
+function openPdfWindow() {
+  window.open("./src/assets/WatDigSponsorshipPackage.pdf", "_blank");
+}

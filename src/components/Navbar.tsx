@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
           <img src="src/assets/header_logo.png" className="h-12" alt="Logo" />{" "}
           {/* Update logo path */}
           <span className="self-center text-3xl font-semibold whitespace-nowrap text-white">
-            WatDig.
+            WatDig
           </span>
         </a>
         <div
@@ -18,34 +18,42 @@ const Navbar: React.FC = () => {
           <ul className="flex flex-col p-4 mt-4 md:space-x-8 md:flex-row md:mt-0 md:bg-zinc-900 md:border-0 md:p-0">
             <li>
               <a
-                href="/team"
-                className="block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
+                href="/"
+                className="text-xl block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
               >
-                team
+                Home
               </a>
             </li>
             <li>
               <a
-                href="/login"
-                className="block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
+                href="#about"
+                className="text-xl block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
               >
-                login
+                About
               </a>
             </li>
             <li>
               <a
-                href="/about"
-                className="block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
+                href="#sponsors"
+                className="text-xl block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
               >
-                about
+                Sponsor
               </a>
             </li>
             <li>
               <a
-                href="/contact"
-                className="block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
+                href="#join"
+                className="text-xl block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
               >
-                contact
+                Join
+              </a>
+            </li>
+            <li>
+              <a
+                href="#join"
+                className="text-xl block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
+              >
+                Contact
               </a>
             </li>
           </ul>
