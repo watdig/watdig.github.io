@@ -46,9 +46,8 @@ const Landing = () => {
           </div>
         </div>
         <div className="flex-1">
-          {/* Add your image here */}
           <img
-            src="./src/assets/boring_machine.png"
+            src="boring_machine.png"
             alt="Your Image"
             className="w-full h-auto"
           />
