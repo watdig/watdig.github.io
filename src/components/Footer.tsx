@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
         <div>
           <h2 className="text-lg font-bold mb-2">Sponsorship</h2>
           <a
-            href="/Sponsor_page"
+            // href="/Sponsor_page"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-darkyellow transition-colors duration-300"
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
           </a>
           <p>
             <a
-              href="/Sponsor_page"
+              // href="/Sponsor_page"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-darkyellow transition-colors duration-300"

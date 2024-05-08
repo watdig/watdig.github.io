@@ -3,8 +3,14 @@ import React from "react";
 const Sponsors: React.FC = () => {
   return (
     <section id="sponsors" className="bg-zinc-900 text-black py-12 w-full">
-      <div className="max-w-screen-xl mx-auto px-4 text-center mt-30">
-        <h2 className="text-4xl text-white font-bold uppercase mb-6">
+      <div className="max-w-screen-xl mx-auto px-4 text-center">
+        <h2
+          className="text-6xl text-white font-bold uppercase mb-6 mt-20"
+          style={{
+            color: "#A154D6",
+            textShadow: `0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 10px #A154D6`, // Reduced glow intensity
+          }}
+        >
           Our Sponsors
         </h2>
         <p className="text-gray-300 mb-6">
@@ -14,12 +20,12 @@ const Sponsors: React.FC = () => {
         {/* Sponsor logos */}
         <div className="flex flex-wrap items-center justify-center gap-8 mb-8">
           <img
-            src="./src/assets/Clearpath:Rockwell.jpeg"
+            src="Clearpath.jpeg"
             alt="Clearpath Robotics"
             className="h-24 md:h-32"
           />
           <img
-            src="./src/assets/qqlf.jpeg"
+            src="qqlf.jpeg"
             alt="QQLF Consultants"
             className="h-24 md:h-32"
           />
@@ -52,5 +58,5 @@ const Sponsors: React.FC = () => {
 export default Sponsors;
 
 function openPdfWindow() {
-  window.open("./src/assets/WatDigSponsorshipPackage.pdf", "_blank");
+  window.open("WatDigSponsorshipPackage.pdf", "_blank");
 }

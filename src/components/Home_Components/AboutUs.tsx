@@ -7,13 +7,9 @@ const AboutUs: React.FC = () => {
       className="text-gray-800 bg-gradient-to-b from-zinc-900 to-zinc-800 py-16 w-full"
     >
       <div className="max-w-7xl mx-auto px-4 lg:px-8 ">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-10">
           <div className="flex flex-col justify-center items-center space-y-4 mr-10">
-            <img
-              src="./src/assets/IMG_1683.JPG"
-              alt="Our Robot"
-              className="w-full h-auto"
-            />
+            <img src="IMG_1683.JPG" alt="Our Robot" className="w-full h-auto" />
             <p className="text-lg text-white text-center">
               HERMES I (H1) was our first competition machine built for the NaBC
               2024 Navigation Challenge. H1 was able to autonomously navigate an
@@ -24,7 +20,13 @@ const AboutUs: React.FC = () => {
           <div className="space-y-12">
             {/* Mission Section */}
             <div>
-              <h2 className="text-4xl lg:text-5xl text-white font-extrabold uppercase tracking-wide">
+              <h2
+                className="text-4xl lg:text-5xl text-white font-extrabold uppercase tracking-wide"
+                style={{
+                  color: "#A154D6",
+                  textShadow: `0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 10px #A154D6`, // Reduced glow intensity
+                }}
+              >
                 Our Mission
               </h2>
               <div className="border-b-2 border-white my-6"></div>
@@ -40,7 +42,13 @@ const AboutUs: React.FC = () => {
 
             {/* Vision Section */}
             <div>
-              <h2 className="text-4xl lg:text-5xl text-white font-extrabold uppercase tracking-wide">
+              <h2
+                className="text-4xl lg:text-5xl text-white font-extrabold uppercase tracking-wide"
+                style={{
+                  color: "#A154D6",
+                  textShadow: `0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 10px #A154D6`, // Reduced glow intensity
+                }}
+              >
                 Our Vision
               </h2>
               <div className="border-b-2 border-white my-6"></div>

@@ -1,6 +1,6 @@
 const Landing = () => {
   const sectionStyle = {
-    backgroundImage: `url('./src/assets/header_logo.pn')`,
+    backgroundImage: `url('header_logo.pn')`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center center",
