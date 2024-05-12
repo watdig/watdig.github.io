@@ -37,7 +37,7 @@ const Join: React.FC = () => {
             and business.
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdglCD8TnkNnL3NcTHF32kcej5Q-ovUytJJDGZ4J0huC5tTVw/viewform?usp=sf_link"
+            href="https://forms.gle/BBqoGbXmfj4secBn7"
             className="bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 focus:outline-none focus:ring-4 focus:ring-purple-300 mb-10
             "
           >
