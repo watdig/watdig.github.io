@@ -58,6 +58,6 @@ const Sponsors: React.FC = () => {
 
 export default Sponsors;
 
-function openPdfWindow() {
-  window.open("WatDigSponsorshipPackage.pdf", "_blank");
-}
+// function openPdfWindow() {
+//   window.open("WatDigSponsorshipPackage.pdf", "_blank");
+// }
