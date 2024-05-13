@@ -33,7 +33,7 @@ const Sponsors: React.FC = () => {
 
         {/* Sponsor Us button */}
         <a
-          // onClick={openPdfWindow}
+          onClick={openPdfWindow}
           className="bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 focus:outline-none focus:ring-4 focus:ring-purple-300 mr-4"
         >
           Sponsorship Package
@@ -58,6 +58,6 @@ const Sponsors: React.FC = () => {
 
 export default Sponsors;
 
-// function openPdfWindow() {
-//   window.open("WatDigSponsorshipPackage.pdf", "_blank");
-// }
+function openPdfWindow() {
+  window.open("SponsorshipPackage2024.pdf", "_blank");
+}
