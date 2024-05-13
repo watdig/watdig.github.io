@@ -30,9 +30,10 @@ const Sponsors: React.FC = () => {
             className="h-24 md:h-32"
           />
         </div>
+
         {/* Sponsor Us button */}
         <a
-          onClick={openPdfWindow}
+          // onClick={openPdfWindow}
           className="bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 focus:outline-none focus:ring-4 focus:ring-purple-300 mr-4"
         >
           Sponsorship Package
