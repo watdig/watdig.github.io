@@ -5,8 +5,7 @@ const Navbar: React.FC = () => {
     <nav className="fixed w-full z-20 top-0 start-0 border-b dark:border-gray-600">
       <div className="w-full flex flex-wrap items-center justify-between mx-auto p-4 bg-zinc-900">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="header_logo.png" className="h-12" alt="Logo" />{" "}
-          {/* Update logo path */}
+          <img src="transparentlogo.png" className="h-12" alt="Logo" />{" "}
           <span className="self-center text-3xl font-semibold whitespace-nowrap text-white">
             WatDig
           </span>
