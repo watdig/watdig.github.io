@@ -28,7 +28,7 @@ const Landing = () => {
             </h1>
             <h1 className="text-9xl font-bold mb-4">WatDig</h1>
             <p className="text-xl text-gray-300 mt-6 mb-8">
-              We're competing in the 2024 Not-A-Boring Company by The Boring
+              We're competing in the 2025 Not-A-Boring Competition hosted by The Boring
               Company. Click below to learn more.
             </p>
             <a
