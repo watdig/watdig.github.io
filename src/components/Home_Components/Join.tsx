@@ -47,7 +47,7 @@ const Join: React.FC = () => {
             <p className="text-lg mb-2 mt-10">Check out our socials</p>
             <div className="flex justify-center space-x-4">
               <a
-                href="#" //add instagram
+                href="https://www.instagram.com/watdig/" 
               >
                 <img src="instagram-svgrepo-com.svg" alt="Instagram" />
               </a>
