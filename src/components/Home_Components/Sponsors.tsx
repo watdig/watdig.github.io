@@ -34,7 +34,7 @@ const Sponsors: React.FC = () => {
             </div>
             <p className="text-gray-100 mb-6">
               We extend our sincere gratitude to the DynaMek Group and WEEF for their
-              generous sponsorship of WatDig. DynaMek's provision of critical parts
+              generous sponsorship to WatDig. DynaMek's provision of critical parts
               for our tunnel boring machine and comprehensive review of all our
               designs have been invaluable.
             </p>
