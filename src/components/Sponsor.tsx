@@ -11,7 +11,7 @@ const Sponsor: React.FC = () => {
         ></div>
       </div>
 
-      {/* Section below the picture */}
+      {/* Section below the picture. */}
       <section className="py-8 px-4">
         <div className="max-w-7xl mx-auto">
           <h2
