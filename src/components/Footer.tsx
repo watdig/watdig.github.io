@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             {/* Replace with actual paths to your social media profiles */}
             <a href="#" className="text-gray-400 hover:text-white">
               <span className="sr-only">Facebook</span>
-              {/* Insert SVG or <img> tag for the Facebook icon here */}
+              {/* Insert SVG or <img> tag for the Facebook iconhere */}
             </a>
             <a
               href="https://www.linkedin.com/company/watdig/"
