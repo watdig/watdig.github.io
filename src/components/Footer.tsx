@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-start justify-between">
           <div>{/*<p className="text-sm">&copy; 2024 by WatDig</p>*/}</div>
           <div className="mt-4 flex space-x-4">
-            {/* Replace with actual paths to your social media profiles */}
+            {/* Replace with actual paths to your social mediaprofiles */}
             <a href="#" className="text-gray-400 hover:text-white">
               <span className="sr-only">Facebook</span>
               {/* Insert SVG or <img> tag for the Facebook iconhere */}
