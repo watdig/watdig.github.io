@@ -5,6 +5,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Sponsor_page from "./components/Sponsor_page";
 import AboutUs from "./components/AboutUs";
+import About from "./components/AboutUs";
+import Sponsor from "./components/Sponsor";
+import Join from "./components/JoinUs";
 
 const App: React.FC = () => {
   return (
@@ -15,6 +18,9 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/sponsors" element={<Sponsor_page />} />
           <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Sponsor" element={<Sponsor />} />
+          <Route path="/Join" element={<Join />} />
         </Routes>
         <Footer />
       </div>

@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <a
-                href="#about"
+                href="/About"
                 className="text-xl block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
               >
                 About
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <a
-                href="#sponsors"
+                href="/Sponsor"
                 className="text-xl block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
               >
                 Sponsor
@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <a
-                href="#join"
+                href="/Join"
                 className="text-xl block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
               >
                 Join
