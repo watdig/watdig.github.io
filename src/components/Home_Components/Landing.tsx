@@ -24,12 +24,13 @@ const Landing = () => {
                 textShadow: `0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 10px #A154D6`, // Reduced glow intensity
               }}
             >
-              Welcome to
+              Hello! We are
             </h1>
             <h1 className="text-9xl font-bold mb-4">WatDig</h1>
             <p className="text-xl text-gray-300 mt-6 mb-8">
-              We're competing in the 2025 Not-A-Boring Competition hosted by The Boring
-              Company. Click below to learn more.
+              We’re a UW design team competing in the 2025 Not-A-Boring
+              Competition hosted by The Boring Company. Click below to learn
+              more!
             </p>
             <a
               href="#about"
