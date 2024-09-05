@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   return (
@@ -17,39 +18,34 @@ const Navbar: React.FC = () => {
           <ul className="flex flex-col p-4 mt-4 md:space-x-8 md:flex-row md:mt-0 md:bg-zinc-900 md:border-0 md:p-0">
             <li>
               <a
-                href="/"
                 className="text-xl block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
               >
-                Home
+                <Link to="/">Home</Link>
               </a>
             </li>
             <li>
               <a
-                href="/about"
                 className="text-xl block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
               >
-                About
+                <Link to="/about">About</Link>
               </a>
             </li>
             <li>
               <a
-                href="/sponsor"
                 className="text-xl block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
               >
-                Sponsor
+                <Link to="/sponsor">Sponsor</Link>
               </a>
             </li>
             <li>
               <a
-                href="/join"
                 className="text-xl block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
               >
-                Join
+                <Link to="/join">Join</Link>
               </a>
             </li>
             <li>
               <a
-                href="#join"
                 className="text-xl block py-2 px-5 text-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center"
               >
                 Contact
