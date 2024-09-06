@@ -1,47 +1,122 @@
 import React from "react";
 
+
 const Join: React.FC = () => {
+  const sectionStyle1 = {
+    backgroundImage: `url('AboutUs_Tunnel_Background.png')`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    height: "100vh",
+  };
+
+  const sectionStyle2 = {
+    backgroundImage: `url('landing_background.png')`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    height: "auto", 
+    minHeight: "42vh", 
+  };
+
   return (
-    <div className="py-8 px-6 pl-[10%] w-full max-w-3xl">
-      <h2
-        className="text-3xl text-white font-bold uppercase mb-4"
-        style={{
-          color: "#A154D6",
-          textShadow: `0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 10px #A154D6`,
-        }}
+    <>
+      <section
+        id="about"
+        style={sectionStyle1}
+        className="text-gray-800 bg-gradient-to-b from-zinc-900 to-zinc-800 py-4 w-full flex items-center h-screen"
       >
-        JOIN OUR TEAM TODAY👋
-      </h2>
-      <p className="text-lg text-white mb-4">
-        Ready to dive into the future of technology? Join us and be at the
-        forefront of innovation! We’re on the lookout for dynamic UWaterloo
-        students in engineering and business who are eager to make a difference.
-        Click the button below to apply and start your adventure with us today!
-      </p>
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSdglCD8TnkNnL3NcTHF32kcej5Q-ovUytJJDGZ4J0huC5tTVw/viewform"
-        className="bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 focus:outline-none focus:ring-4 focus:ring-purple-300 mb-8"
-      >
-        Join Today
-      </a>
-      <p className="text-lg text-white mt-16 mb-4">
-        Stay up to date with our newest recruitment cycles and events!
-      </p>
-      <div>
-        <p className="text-lg mb-2 mt-8 text-center">Check out our socials</p>
-        <div className="flex justify-center space-x-4">
-          <a href="https://www.instagram.com/watdig/">
-            <img src="instagram-svgrepo-com.svg" alt="Instagram" />
-          </a>
-          <a href="https://www.linkedin.com/company/watdig/">
-            <img src="linkedin-svgrepo-com.svg" alt="LinkedIn" />
-          </a>
-          <a href="mailto:watdig.team@gmail.com">
-            <img src="email-1572-svgrepo-com.svg" alt="Email" />
+        <div className="py-8 px-6 w-full max-w-3xl ml-20">
+          <p
+            className="text-white font-bold mb-10 text-left max-w-lg"
+            style={{
+              fontSize: "35.6px",
+              color: "#ffffff",
+              fontFamily: "'Poppins', sans-serif",
+            }}
+          >
+            Join our team today! We’re looking for talented individuals to join
+            all departments of our team.
+          </p>
+          <p className="text-lg text-white mb-4">
+            Ready to dive into the future of technology? Ready to work on a
+            badass project? Join us and be at the forefront of innovation! We’re
+            on the lookout for dynamic UWaterloo students in engineering and
+            business who are eager to make a difference. Click the button below
+            to apply and start your adventure with us today!
+          </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdglCD8TnkNnL3NcTHF32kcej5Q-ovUytJJDGZ4J0huC5tTVw/viewform"
+            className="text-white font-bold py-5 px-12 text-xl rounded-full focus:outline-none focus:ring-4 focus:ring-purple-300 mb-8 mt-8"
+            style={{ backgroundColor: "#383479" }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.backgroundColor = "#312f6e")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.backgroundColor = "#383479")
+            }
+          >
+            Join Us
           </a>
         </div>
+      </section>
+      <div className="w-full flex justify-between px-0">
+        <img
+          src="Grp_Pic_Rocks.png"
+          alt="Description of Image 1"
+          className="w-1/3 object-cover"
+          style={{ height: "300px" }} // Adjust height as needed
+        />
+        <img
+          src="Grp_Boring_Pic.png"
+          alt="Description of Image 2"
+          className="w-1/3 object-cover"
+          style={{ height: "300px" }} // Adjust height as needed
+        />
+        <img
+          src="Grp_Shoveling_Pic.png"
+          alt="Description of Image 3"
+          className="w-1/3 object-cover"
+          style={{ height: "300px" }} // Adjust height as needed
+        />
+        <img
+          src="Grp_Cleaning_Pic.png"
+          alt="Description of Image 3"
+          className="w-1/3 object-cover"
+          style={{ height: "300px" }} // Adjust height as needed
+        />
       </div>
-    </div>
+      <section
+        id="about"
+        style={sectionStyle2}
+        className="text-gray-800 bg-gradient-to-b from-zinc-900 to-zinc-800 py-4 w-full flex justify-center items-start h-screen"
+      >
+        <div className="mt-10 text-center max-w-4xl mx-auto">
+          <p
+            className="text-white font-bold"
+            style={{
+              fontSize: "35.6px",
+              color: "#ffffff",
+              fontFamily: "'Poppins', sans-serif",
+            }}
+          >
+            While you’re at it, why not stay up to date with our newest
+            recruitment cycles and new events!
+          </p>
+          <div className="flex justify-center space-x-4 mt-10">
+            <a href="https://www.instagram.com/watdig/">
+              <img src="instagram-svgrepo-com.svg" alt="Instagram" />
+            </a>
+            <a href="https://www.linkedin.com/company/watdig/">
+              <img src="linkedin-svgrepo-com.svg" alt="LinkedIn" />
+            </a>
+            <a href="mailto:watdig.team@gmail.com">
+              <img src="email-1572-svgrepo-com.svg" alt="Email" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

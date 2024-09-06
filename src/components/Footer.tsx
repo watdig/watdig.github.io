@@ -2,16 +2,14 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-screen bg-black text-white p-8">
+    <footer className="w-screen bg-black text-white p-8 z-10 relative">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Logo and copyright */}
         <div className="flex flex-col items-start justify-between">
           <div>{/*<p className="text-sm">&copy; 2024 by WatDig</p>*/}</div>
           <div className="mt-4 flex space-x-4">
-            {/* Replace with actual paths to your social mediaprofiles */}
             <a href="#" className="text-gray-400 hover:text-white">
               <span className="sr-only">Facebook</span>
-              {/* Insert SVG or <img> tag for the Facebook iconhere */}
             </a>
             <a
               href="https://www.linkedin.com/company/watdig/"
@@ -49,7 +47,6 @@ const Footer: React.FC = () => {
         <div>
           <h2 className="text-lg font-bold mb-2">Sponsorship</h2>
           <a
-            // href="/Sponsor_page"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-darkyellow transition-colors duration-300"
@@ -58,7 +55,6 @@ const Footer: React.FC = () => {
           </a>
           <p>
             <a
-              // href="/Sponsor_page"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-darkyellow transition-colors duration-300"

@@ -1,200 +1,275 @@
 import React from "react";
 
 const Sponsor: React.FC = () => {
-  return (
-    <div>
-      {/* Container for the background image */}
-      <div className="relative w-full h-96 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('Tunnel-Group-Pic.png')` }}
-        ></div>
-      </div>
+  const sectionStyle = {
+    backgroundImage: `url('WatDig_Tunnel_GP.png')`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    height: "100vh",
+  };
 
-      {/* Section below the picture. */}
-      <section className="py-8 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2
-            className="text-3xl text-white font-bold uppercase mb-3"
-            style={{
-              color: "#A154D6",
-              textShadow: `0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 10px #A154D6`,
-            }}
-          >
-            Partner with us
-          </h2>
-          <p className="text-lg text-white mb-5">
-            WatDig is a new leading design team at the University of Waterloo, a
-            school with a history of prestige and excellence in student design
-            competitions. Developing a tunnle-boring machine for NaBC 2025 would
-            make us the first Canadian team to compete in the competition.
-          </p>
-          <p className="text-lg text-white mb-5">
-            Partner with our team to gain access to some of the top-talent in
-            the Engineering field looking for internship opportunities
-            year-round. Supporting WatDig means building a long lasting
-            relationship with the top Engineering school in Canada.
-          </p>
-          <p className="text-lg text-white mb-5">
-            Sponsoring us offers numerous benefits, including significant
-            marketing advantages and potential tax benefits. By supporting us,
-            your company is able to enhance their brand visibility and
-            reputation within the University of Waterloo. This sponsorship
-            provides opportunities for logo placement on team material, media
-            exposure, and association with innovative and cutting-edge projects,
-            which can attract new customers and clients.
-          </p>
-          <div className="w-full flex justify-start">
-            <div className="w-full max-w-2xl px-4 py-8">
-              <h2
-                className="text-3xl text-white font-bold uppercase mb-3"
+  const sectionStyle2 = {
+    backgroundImage: `url('landing_background.png')`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    height: "100vh",
+  };
+
+  const sectionStyle3 = {
+    backgroundImage: `url('AboutUs_Tunnel_Background.png')`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    height: "100vh",
+  };
+  return (
+    <>
+      {/* Content Section */}
+      <section
+        id="about"
+        style={sectionStyle}
+        className="text-gray-800 bg-gradient-to-b from-zinc-900 to-zinc-800 py-4 w-full"
+      >
+        <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col justify-end h-screen">
+          <div className="grid grid-cols-1 gap-4 mt-10">
+            {/* Bottom-aligned content */}
+            <div className="flex justify-center">
+              <p
+                className="text-white font-bold mb-10 text-center max-w-lg"
                 style={{
-                  color: "#A154D6",
-                  textShadow: `0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 10px #A154D6`,
+                  fontSize: "35.6px",
+                  color: "#ffffff",
+                  fontFamily: "'Poppins', sans-serif",
                 }}
               >
-                Become a Sponsor
-              </h2>
-              <p className="text-lg text-white mb-5">
-                Every contribution, whether monetary or in-kind, is vital to
-                TBM's design and development. We thank our sponsors for
-                believing in WatDig and supporting our mission. Your generosity
-                fuels our passion and success. Together, we advance the future
-                of tunnel boring technology.
+                In order to succeed at what we do, we need your help.
               </p>
-              <div className="flex justify-center">
-                <a
-                  onClick={openPdfWindow}
-                  className="bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 focus:outline-none focus:ring-4 focus:ring-purple-300 mb-10"
-                >
-                  Become a Sponsor
-                </a>
-              </div>
-            </div>
-            <div className="w-full max-w-2xl px-4 py-8">
-              <h2
-                className="text-3xl text-white font-bold uppercase mb-3"
-                style={{
-                  color: "#A154D6",
-                  textShadow: `0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 10px #A154D6`,
-                }}
-              >
-                Become a Donor
-              </h2>
-              <p className="text-lg text-white mb-5">
-                Your donations enable us to acquire essential items and
-                materials for each vehicle. As a registered charity in Canada
-                and the US, WatDig offers tax receipts for donations, which are
-                processed through the University of Waterloo Student Design
-                Centre.
-              </p>
-              <div className="flex justify-center">
-                <a
-                  href="https://imodules.uwaterloo.ca/s/1802/21/form.aspx?sid=1802&gid=2&pgid=1266&cid=3030"
-                  className="bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 focus:outline-none focus:ring-4 focus:ring-purple-300 mb-10"
-                >
-                  Become a Donor
-                </a>
-              </div>
             </div>
           </div>
-          {/* Centered section */}
-          <div className="w-full flex flex-col items-center mb-12">
-            <h2
-              className="text-4xl text-white font-bold uppercase mb-12"
-              style={{
-                color: "#A154D6",
-                textShadow: `0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 10px #A154D6`,
-              }}
-            >
-              A Big Thank You To WatDig's Generous Sponsors
-            </h2>
-            <div className="flex flex-col md:flex-row items-center text-left">
-              <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-6 bg-[#d9d5df] rounded-lg p-4">
-                <img
-                  src="Dynamek Logo2.png"
-                  alt="Dynamek Logo"
-                  className="w-64 h-64 md:w-76 md:h-76 object-cover rounded-lg"
-                />
-              </div>
-              <div className="flex flex-col items-center md:items-start">
-                <p className="text-white mb-6 md:mb-0 text-center md:text-left">
-                  DynaMEK Group Ltd. is a dynamic mechanical engineering firm
-                  that offers over a century of combined Tunnel Boring Machine
-                  (TBM) and underground infrastructure experience across various
-                  aspects including: design, analysis, manufacturing,
-                  validation, testing, troubleshooting and operation. DynaMEK
-                  Group Ltd. is a licensed engineering firm with the regulatory
-                  body, Professional Engineers Ontario. Established in 2017 ,
-                  DynaMEK supports the Tunnelling and Underground industries by
-                  providing professional services and custom engineered
-                  solutions, including: cuttingheads for TBMs, refurbishment of
-                  TBM components, custom designed replacement main bearings,
-                  spare parts and support for various troubleshooting and
-                  feasibility studies on new and existing tunnelling projects
+        </div>
+      </section>
+      <section
+        id="about"
+        style={sectionStyle2}
+        className="text-gray-800 bg-gradient-to-b from-zinc-900 to-zinc-800 py-16 w-full"
+      >
+        <div className="max-w-7xl mx-auto px-4 lg:px-8 flex items-center h-screen">
+          <div className="lg:grid-cols-2">
+            {/* Left side content */}
+            <div className="mb-10">
+              <div>
+                <h2
+                  className="text-4xl lg:text-5xl text-white font-bold uppercase tracking-wide"
+                  style={{
+                    fontSize: "48.6px",
+                    color: "#ffffff",
+                    fontFamily: "'Poppins', sans-serif",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  Partner with us to gain exclusive benefits from WatDig, UW’s
+                  very first TBM design team.
+                </h2>
+                <p className="text-lg text-white leading-relaxed">
+                  WatDig, University of Waterloo’s newest design team aims to be
+                  the first Canadian team to compete in NaBC 2025. Partner with
+                  us to connect with top engineering talent and build a lasting
+                  relationship with Canada’s leading engineering school.
+                  Sponsorship offers significant marketing and tax benefits,
+                  enhancing your brand visibility through logo placement, media
+                  exposure, and association with innovative projects.
                 </p>
               </div>
             </div>
+            <a
+              className="text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:ring-4 focus:ring-purple-300 mb-8 mr-4"
+              style={{ backgroundColor: "#383479" }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.backgroundColor = "#312f6e")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.backgroundColor = "#383479")
+              }
+            >
+              Become a Sponsor
+            </a>
+            <a
+              className="text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:ring-4 focus:ring-purple-300 mb-8"
+              style={{ backgroundColor: "#383479" }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.backgroundColor = "#312f6e")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.backgroundColor = "#383479")
+              }
+            >
+              Become a Donor
+            </a>
           </div>
+        </div>
+      </section>
+      <section
+        id="about"
+        style={sectionStyle2}
+        className="text-gray-800 bg-gradient-to-b from-zinc-900 to-zinc-800 py-16 w-full"
+      >
+        <div className="max-w-7xl mx-auto px-4 lg:px-8 flex items-center h-screen">
+          <div className="sgrid-cols-1 lg:grid-cols-2 gap-4 mt-10">
+            {/* Left side content */}
+            <div>
+              <p
+                className="text-white text-left font-bold"
+                style={{
+                  fontSize: "44px",
+                  color: "#ffffff",
+                  fontFamily: "'Poppins', sans-serif",
+                  paddingBottom: "10px",
+                }}
+              >
+                A big thank you to WatDig’s generous sponsors!
+              </p>
+              <p
+                className="text-white text-left font-bold"
+                style={{
+                  fontSize: "30px",
+                  color: "#ffffff",
+                  fontFamily: "'Poppins', sans-serif",
+                  paddingBottom: "30px",
+                }}
+              >
+                Our Partner
+              </p>
+              <div className="w-full flex items-start px-0">
+                <img
+                  src="Dynamek Group Pic.webp"
+                  alt="Description of Image 1"
+                  className="object-contain max-w-[20%] mr-4"
+                />
+                <div className="flex flex-col">
+                  <p className="text-lg text-white leading-relaxed text-justify">
+                    <b>
+                      A special thanks to DynaMEK group Ltd., WatDig’s very own
+                      partner!
+                    </b>
+                    <br />
+                    DynaMEK Group Ltd. is a dynamic mechanical engineering firm
+                    that offers over a century of combined Tunnel Boring Machine
+                    (TBM) and underground infrastructure experience across
+                    various aspects including: design, analysis, manufacturing,
+                    validation, testing, troubleshooting, and operation. DynaMEK
+                    Group Ltd. is a licensed engineering firm with the
+                    regulatory body, Professional Engineers Ontario. Established
+                    in 2017, DynaMEK supports the Tunnelling and Underground
+                    industries by providing professional services and custom
+                    engineered solutions, including: cuttingheads for TBMs,
+                    refurbishment of TBM components, custom designed replacement
+                    main bearings, spare parts, and support for various
+                    troubleshooting and feasibility studies on new and existing
+                    tunnelling projects.
+                  </p>
 
-          <div className="w-full flex justify-center">
-            <div className="flex-shrink-0 mb-3 md:mb-0 md:mr-5 bg-[#d9d5df] rounded-lg p-3">
-              <div className="flex flex-wrap gap-4">
-                <div className="flex-1 min-w-0">
-                  <img
-                    src="EngSoc Logo.png"
-                    alt="EngSoc Logo"
-                    className="w-full h-32 md:h-40 object-contain rounded-lg"
-                  />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <img
-                    src="WEEF Logo.png"
-                    alt="WEEF Logo"
-                    className="w-full h-32 md:h-40 object-contain rounded-lg"
-                  />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <img
-                    src="Onshape logo.png"
-                    alt="Onshape Logo"
-                    className="w-full h-32 md:h-40 object-contain rounded-lg"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-wrap gap-4 mt-3">
-                <div className="flex-1 min-w-0">
-                  <img
-                    src="Mg Chemicals Logo.png"
-                    alt="Mg Chemicals Logo"
-                    className="w-full h-28 md:h-36 object-contain rounded-lg"
-                  />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <img
-                    src="Rockwell Clearpath Logo.png"
-                    alt="Rockwell Clearpath Logo"
-                    className="w-full h-28 md:h-36 object-contain rounded-lg"
-                  />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <img
-                    src="QQLF logo2.png"
-                    alt="QQLF Logo"
-                    className="w-full h-28 md:h-36 object-contain rounded-lg"
-                  />
+                  <div className="flex space-x-4 mt-4">
+                    <a href="https://www.linkedin.com/company/dynamek-group-ltd./people/">
+                      <img
+                        src="linkedin-svgrepo-com.svg"
+                        alt="LinkedIn"
+                        className="w-10 h-auto"
+                      />
+                    </a>
+                    <a href="http://dynamekgroup.com/">
+                      <img
+                        src="Dynamek_Logo.png"
+                        alt="Dynamek Logo"
+                        className="w-36 h-auto"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </div>
+      <section
+        id="about"
+        style={sectionStyle3}
+        className="text-gray-800 bg-gradient-to-b from-zinc-900 to-zinc-800 py-16 w-full"
+      >
+        <div className="max-w-7xl mx-auto px-4 lg:px-8 flex items-center h-screen">
+          <div className="sgrid-cols-1 lg:grid-cols-2 gap-4 mt-10">
+            {/* Left side content */}
+            <div>
+              <p
+                className="text-white text-left font-bold"
+                style={{
+                  fontSize: "30px",
+                  color: "#ffffff",
+                  fontFamily: "'Poppins', sans-serif",
+                  paddingBottom: "10px",
+                }}
+              >
+                Diamond
+              </p>
+              <div className="w-full flex justify-between px-0">
+                <img
+                  src="Onshape logo.png"
+                  alt="Description of Image 1"
+                  className="flex-1 object-contain max-w-[65%] mx-2"
+                />
+                <img
+                  src="WEEF Logo.png"
+                  alt="Description of Image 2"
+                  className="flex-1 object-contain max-w-[65%] mx-2"
+                />
+              </div>
+            </div>
+            <div>
+              <p
+                className="text-white text-left font-bold"
+                style={{
+                  fontSize: "30px",
+                  color: "#ffffff",
+                  fontFamily: "'Poppins', sans-serif",
+                  paddingBottom: "10px",
+                }}
+              >
+                Gold and Silver
+              </p>
+              <div className="w-full flex justify-between px-0">
+                <img
+                  src="Masterbuilders logo.png"
+                  alt="Description of Image 1"
+                  className="flex-1 object-contain max-w-[20%] mx-2"
+                />
+                <img
+                  src="Mg Chemicals Logo.png"
+                  alt="Description of Image 2"
+                  className="flex-1 object-contain max-w-[20%] mx-2"
+                />
+                <img
+                  src="Mg Chemicals Logo.png"
+                  alt="Description of Image 2"
+                  className="flex-1 object-contain max-w-[20%] mx-2"
+                />
+                <img
+                  src="EngSoc Logo.png"
+                  alt="Description of Image 2"
+                  className="flex-1 object-contain max-w-[10%] mx-2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
 export default Sponsor;
-
+/*
 function openPdfWindow() {
   window.open("Watdig Sponsorship Package (1).pdf", "_blank");
 }
+*/

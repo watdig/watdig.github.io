@@ -1,111 +1,151 @@
 import React from "react";
 
 const About: React.FC = () => {
-  return (
-    <div className="bg-zinc-800 p-10 text-center min-h-screen overflow-auto relative">
-      {/* Background glow */}
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-500 blur-sm -z-10"></div>
+  const sectionStyle = {
+    backgroundImage: `url('AboutUs_Tunnel_Lining_Pic.png')`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    height: "100vh",
+  };
 
-      <div className="text-center text-white space-y-20 max-w-6xl mx-auto relative z-10">
-        <div className="pt-16">
-          <h2
-            className="text-6xl text-white font-bold uppercase"
-            style={{
-              color: "#A154D6",
-              textShadow: `0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 15px #A154D6`, // Adjust glow intensity
-            }}
-          >
-            Our Story
-          </h2>
-        </div>
-        <div className="flex flex-col items-center gap-8">
-          <div className="flex items-center gap-8 mb-8 w-full">
-            <div className="flex-shrink-0 flex gap-6">
-              <img
-                src="WatDig-Group-Picture.png"
-                alt="WatDig Group Pic"
-                className="w-64 h-64 md:w-76 md:h-76 object-cover"
-              />
-            </div>
-            <div className="text-left">
-              <h3
-                className="text-3xl text-white font-bold uppercase mb-6"
+  const sectionStyle2 = {
+    backgroundImage: `url('landing_background.png')`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    height: "100vh",
+  };
+  
+  return (
+    <>
+      {/* Content Section */}
+      <section
+        id="about"
+        style={sectionStyle}
+        className="text-gray-800 bg-gradient-to-b from-zinc-900 to-zinc-800 py-4 w-full"
+      >
+        <div className="max-w-7xl mx-auto px-4 lg:px-8 flex items-center h-screen">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-10">
+            {/* Left side content */}
+            <div>
+              <p
+                className="text-white text-left font-bold"
                 style={{
-                  color: "#A154D6",
-                  textShadow: `0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 10px #A154D6`,
+                  fontSize: "35.6px",
+                  color: "#ffffff",
+                  fontFamily: "'Poppins', sans-serif",
                 }}
               >
-                Who We Are
-              </h3>
-              <p className="text-gray-100 mb-6">
+                We might be boring, but we’re here to WIN.
+              </p>
+              <p className="text-lg mb-8 text-white leading-relaxed">
                 WatDig is a University of Waterloo student team in the Sedra
                 Student Design Centre, guided by Prof. Peter Teertstra. We are
                 entering our second year in the Not-A-Boring Competition (NaBC),
                 hosted by The Boring Company. With expertise in Mechatronics,
                 Electrical, Mechanical, and other engineering fields, we are
-                dedicated and highly qualified.
+                dedicated and highly qualified.˝
               </p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-8 mb-8 w-full">
-            <div className="flex-shrink-0 flex gap-6">
-              <img
-                src="Boring-Machine.png"
-                alt="Boring Machine Pic"
-                className="w-64 h-64 md:w-76 md:h-76 object-cover"
-              />
-            </div>
-            <div className="text-left">
-              <h3
-                className="text-3xl text-white font-bold uppercase mb-6"
-                style={{
-                  color: "#A154D6",
-                  textShadow: `0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 10px #A154D6`,
-                }}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdglCD8TnkNnL3NcTHF32kcej5Q-ovUytJJDGZ4J0huC5tTVw/viewform"
+                className="text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:ring-4 focus:ring-purple-300 mb-8"
+                style={{ backgroundColor: "#383479" }}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.backgroundColor = "#312f6e")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.backgroundColor = "#383479")
+                }
               >
-                What We Do
-              </h3>
-              <p className="text-gray-100 mb-6">
-                This year, we are developing a fully functional tunnel-boring
-                machine (TBM) for NaBC 2025, which challenges teams to design a
-                TBM that can excavate, line a tunnel, and steer with high
-                precision. The event includes multiple design briefings and
-                culminates in a week-long competition at The Boring Company’s
-                facility in Bastrop, Texas.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center gap-8 mb-8 w-full">
-            <div className="flex-shrink-0 flex gap-6">
-              <img
-                src="NABC-Bot.png"
-                alt="NABC Bot Pic"
-                className="w-64 h-64 md:w-76 md:h-76 object-cover"
-              />
-            </div>
-            <div className="text-left">
-              <h3
-                className="text-3xl text-white font-bold uppercase mb-6"
-                style={{
-                  color: "#A154D6",
-                  textShadow: `0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 0px #A154D6, 0 0 10px #A154D6`,
-                }}
-              >
-                Our Success
-              </h3>
-              <p className="text-gray-100 mb-6">
-                Last year, we competed in the NaBC 2024 Navigation Challenge,
-                developing an autonomous vehicle capable of navigating a rugged
-                off-road obstacle course without GPS or front-facing visual
-                sensors. Our team’s prototype, Hermes 1 (H1), won 1st place and
-                the Navigation Award.
-              </p>
+                Join Our Mission
+              </a>
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Bottom Images Section (moved outside the section) */}
+      <div className="w-full flex justify-between px-0">
+        <img
+          src="Swissloop_pic.png"
+          alt="Description of Image 1"
+          className="w-1/3 object-cover"
+          style={{ height: "400px" }} // Adjust height as needed
+        />
+        <img
+          src="Team_Meeting_Pic.png"
+          alt="Description of Image 2"
+          className="w-1/3 object-cover"
+          style={{ height: "400px" }} // Adjust height as needed
+        />
+        <img
+          src="Working_On_H1.png"
+          alt="Description of Image 3"
+          className="w-1/3 object-cover"
+          style={{ height: "400px" }} // Adjust height as needed
+        />
       </div>
-    </div>
+      <section
+        id="about"
+        style={sectionStyle2}
+        className="text-gray-800 bg-gradient-to-b from-zinc-900 to-zinc-800 py-16 w-full"
+      >
+        <div className="max-w-7xl mx-auto px-4 lg:px-8 flex items-top h-screen">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-10">
+            {/* Left side content */}
+            <div className="space-y-12">
+              <div>
+                <h2
+                  className="text-4xl lg:text-5xl text-white font-bold uppercase tracking-wide"
+                  style={{
+                    fontSize: "48.6px",
+                    color: "#ffffff",
+                    fontFamily: "'Poppins', sans-serif",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  What is WatDig’s plan to win the Not-A-Boring-Competition
+                  2025?
+                </h2>
+                <p className="text-lg text-white leading-relaxed">
+                  WatDig is a University of Waterloo student team in the Sedra
+                  Student Design Centre, guided by Prof. Peter Teertstra. We are
+                  entering our second year in the Not-A-Boring Competition
+                  (NaBC), hosted by The Boring Company. With expertise in
+                  Mechatronics, Electrical, Mechanical, and other engineering
+                  fields, we are dedicated and highly qualified.
+                </p>
+              </div>
+            </div>
+            {/* Right side content */}
+            <div className="space-y-12 lg:text-right mt-60">
+              <div>
+                <h2
+                  className="text-4xl lg:text-5xl text-white font-bold uppercase tracking-wide"
+                  style={{
+                    fontSize: "48.6px",
+                    color: "#ffffff",
+                    fontFamily: "'Poppins', sans-serif",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  We won the 2024 Navigation challenge, and we’re bringing it
+                  back, bigger and better.
+                </h2>
+                <p className="text-lg text-white leading-relaxed">
+                  Last year, we competed in the NaBC 2024 Navigation Challenge,
+                  developing an autonomous vehicle capable of navigating a
+                  rugged off-road obstacle course without GPS or front-facing
+                  visual sensors. Our team’s prototype, Hermes 1 (H1), won 1st
+                  place and the Navigation Award.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
