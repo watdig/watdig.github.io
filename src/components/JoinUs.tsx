@@ -38,7 +38,7 @@ const Join: React.FC = () => {
             Join our team today! We’re looking for talented individuals to join
             all departments of our team.
           </p>
-          <p className="text-lg text-white mb-4">
+          <p className="text-lg text-white mb-8">
             Ready to dive into the future of technology? Ready to work on a
             badass project? Join us and be at the forefront of innovation! We’re
             on the lookout for dynamic UWaterloo students in engineering and
@@ -46,18 +46,18 @@ const Join: React.FC = () => {
             to apply and start your adventure with us today!
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdglCD8TnkNnL3NcTHF32kcej5Q-ovUytJJDGZ4J0huC5tTVw/viewform"
-            className="text-white font-bold py-5 px-12 text-xl rounded-full focus:outline-none focus:ring-4 focus:ring-purple-300 mb-8 mt-8"
-            style={{ backgroundColor: "#383479" }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.backgroundColor = "#312f6e")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.backgroundColor = "#383479")
-            }
-          >
-            Join Us
-          </a>
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdglCD8TnkNnL3NcTHF32kcej5Q-ovUytJJDGZ4J0huC5tTVw/viewform"
+              className="text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:ring-4 focus:ring-purple-300 mt-8"
+              style={{ backgroundColor: "#383479" }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.backgroundColor = "#312f6e")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.backgroundColor = "#383479")
+              }
+            >
+              Become a Donor
+            </a>
         </div>
       </section>
       <div className="w-full flex justify-between px-0">

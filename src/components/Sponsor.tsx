@@ -84,8 +84,12 @@ const Sponsor: React.FC = () => {
               </div>
             </div>
             <a
-              className="text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:ring-4 focus:ring-purple-300 mb-8 mr-4"
-              style={{ backgroundColor: "#383479" }}
+              className="text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:ring-4 focus:ring-purple-300 mb-8 mr-5"
+              style={{
+                backgroundColor: "#383479",
+                cursor: "pointer", // Add this line to show the pointer cursor
+              }}
+              onClick={openPdfWindow}
               onMouseEnter={(e) =>
                 (e.currentTarget.style.backgroundColor = "#312f6e")
               }
@@ -95,7 +99,9 @@ const Sponsor: React.FC = () => {
             >
               Become a Sponsor
             </a>
+
             <a
+              href="https://imodules.uwaterloo.ca/s/1802/21/form.aspx?sid=1802&gid=2&pgid=1266&cid=3030"
               className="text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:ring-4 focus:ring-purple-300 mb-8"
               style={{ backgroundColor: "#383479" }}
               onMouseEnter={(e) =>
@@ -268,8 +274,7 @@ const Sponsor: React.FC = () => {
 };
 
 export default Sponsor;
-/*
+
 function openPdfWindow() {
   window.open("Watdig Sponsorship Package (1).pdf", "_blank");
 }
-*/
