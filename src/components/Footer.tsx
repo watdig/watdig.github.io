@@ -47,6 +47,7 @@ const Footer: React.FC = () => {
         <div>
           <h2 className="text-lg font-bold mb-2">Sponsorship</h2>
           <a
+            href="/join"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-darkyellow transition-colors duration-300"
@@ -55,6 +56,7 @@ const Footer: React.FC = () => {
           </a>
           <p>
             <a
+              href="/sponsor"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-darkyellow transition-colors duration-300"
@@ -67,8 +69,15 @@ const Footer: React.FC = () => {
         {/* Join the Team Section */}
         <div>
           <h2 className="text-lg font-bold mb-2">Join the Team</h2>
-          <p className="text-sm mb-1">Roles</p>
-          <p className="text-sm">Application</p>
+          <a href="/join" className="text-white mb-1 block">
+            Roles
+          </a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdglCD8TnkNnL3NcTHF32kcej5Q-ovUytJJDGZ4J0huC5tTVw/viewform"
+            className="text-white mb-1 block"
+          >
+            Application
+          </a>
         </div>
       </div>
     </footer>
