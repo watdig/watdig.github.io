@@ -56,7 +56,7 @@ const Join: React.FC = () => {
                 (e.currentTarget.style.backgroundColor = "#383479")
               }
             >
-              Become a Donor
+              Join Us
             </a>
         </div>
       </section>
