@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
             <Link
-                to="/join"
+                to="/contact"
                 className="text-xl block py-2 px-5 text-white focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center hover:text-purple-500"
                 style={{ backgroundColor: "transparent" }}
               >
