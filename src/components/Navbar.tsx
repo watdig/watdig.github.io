@@ -9,8 +9,7 @@ const Navbar: React.FC = () => {
         style={{
           backgroundSize: "cover",
           backgroundPosition: "center",
-          // Optional: Set background color with opacity if needed
-          backgroundColor: "rgba(0, 0, 0, 0.0)", // Adjust opacity here
+          backgroundColor: "rgba(0, 0, 0, 0.5)", // Adjust the opacity here (0.0 to 1.0)
         }}
       >
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -61,12 +60,12 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
             <Link
-                to="/contact"
-                className="text-xl block py-2 px-5 text-white focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center hover:text-purple-500"
-                style={{ backgroundColor: "transparent" }}
-              >
-                Contact
-              </Link>
+              to="/contact"
+              className="text-xl block py-2 px-5 text-white focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-center hover:text-purple-500"
+              style={{ backgroundColor: "transparent" }}
+            >
+              Contact
+            </Link>
           </ul>
         </div>
       </div>
