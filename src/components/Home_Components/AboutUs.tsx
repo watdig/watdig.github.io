@@ -17,14 +17,6 @@ const AboutUs: React.FC = () => {
     height: "100vh",
   };
 
-  const sectionStyle3 = {
-    backgroundImage: `url('AboutUs_Tunnel_Background.png')`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center center",
-    height: "100vh",
-  };
-
   const sectionStyle4 = {
     backgroundImage: `url('AboutUs_Tunnel_Background.png')`,
     backgroundSize: "cover",
