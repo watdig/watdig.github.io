@@ -25,6 +25,14 @@ const AboutUs: React.FC = () => {
     height: "100vh",
   };
 
+  const sectionStyle4 = {
+    backgroundImage: `url('AboutUs_Tunnel_Background.png')`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    height: "130vh",
+  };
+
   return (
     <>
       {/* Content Section */}
@@ -153,65 +161,131 @@ const AboutUs: React.FC = () => {
       </section>
       <section
         id="about"
-        style={sectionStyle3}
-        className="text-gray-800 bg-gradient-to-b from-zinc-900 to-zinc-800 py-16 w-full"
+        style={sectionStyle4}
+        className="text-gray-800 bg-gradient-to-b from-zinc-900 to-zinc-800  w-full overflow-hidden"
       >
-        <div className="max-w-7xl mx-auto px-4 lg:px-8 flex items-center h-screen">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-10">
-            {/* Left side content */}
-            <div>
-              <p
-                className="text-white text-left font-bold"
-                style={{
-                  fontSize: "42.2px",
-                  color: "#ffffff",
-                  fontFamily: "'Poppins', sans-serif",
-                  paddingBottom: "10px",
-                }}
-              >
-                WatDig is supported by these amazing companies
-              </p>
-              <p
-                className="text-white text-left font-bold"
-                style={{
-                  fontSize: "26.4px",
-                  color: "#ffffff",
-                  fontFamily: "'Poppins', sans-serif",
-                  paddingBottom: "30px",
-                }}
-              >
-                Our Partner
-              </p>
-              <img src="Dynamek_Logo.png" alt="Partner Logo" />
-              <p
-                className="text-white text-left font-bold"
-                style={{
-                  paddingTop: "30px",
-                  fontSize: "26.4px",
-                  color: "#ffffff",
-                  fontFamily: "'Poppins', sans-serif",
-                  paddingBottom: "10px",
-                }}
-              >
-                Our Sponsors
-              </p>
-              <div className="w-full flex justify-between px-0">
+        <div className="max-w-7xl mx-auto px-4 lg:px-6 flex  h-full flex-col space-y-[100px]">
+          <div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-[120px] items-center">
+              {/* Left side content */}
+              <div>
+                <p
+                  style={{
+                    fontSize: "42.2px",
+                    color: "#ffffff",
+                    fontFamily: "'Poppins', sans-serif",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  <span className="text-white text-left font-bold ">
+                    Our Partner
+                  </span>
+                </p>
+                <div>
+                  <p
+                    className="text-white text-left "
+                    style={{
+                      fontSize: "23px",
+                      color: "#ffffff",
+                      fontFamily: "'Poppins', sans-serif",
+                      paddingBottom: "30px",
+                      maxHeight: "150px",
+                      width: "75%",
+                    }}
+                  >
+                    A big thank you to the DynaMEK group for sponsoring WatDig
+                    with several essential components for our tunnel boring
+                    machine and providing valuable mentorship to our team!
+                  </p>
+                </div>
+              </div>
+              <div>
+                <img src="Dynamek_Logo.png" alt="Partner Logo" />
+              </div>
+            </div>
+          </div>
+          <div className="space-y-[50px]">
+            {" "}
+            {/*this div contains the sponsors and sponsor button so the spacing can be 50px instead of parent div y-spacing which is 100px */}
+            <div className="">
+              <div className=" items-center col-span-2">
+                <p
+                  className="relative flex items-center w-full my-[10px] mb-[20px]"
+                  style={{
+                    fontSize: "42.2px",
+                    color: "#ffffff",
+                    fontFamily: "'Poppins', sans-serif",
+                  }}
+                >
+                  <div className="flex-grow border-t border-white"></div>
+                  <span className="px-[10px]  text-white font-bold">
+                    Some of our generous sponsors
+                  </span>
+                  <div className="flex-grow border-t border-white"></div>
+                </p>
+              </div>
+              <div className="w-full flex justify-between px-0 max-h-[300px]">
                 <img
-                  src="Onshape logo.png"
+                  src="D - ONSHAPE.png"
                   alt="Description of Image 1"
-                  className="flex-1 object-contain max-w-[65%] mx-2"
+                  className="flex-1 object-cover mx-2 max-w-[400px]"
                 />
                 <img
                   src="WEEF Logo.png"
                   alt="Description of Image 2"
-                  className="flex-1 object-contain max-w-[65%] mx-2"
+                  className="flex-1 object-contain max-w-[30%] mx-2"
+                />
+                <img
+                  src="D - LEDCOR.png"
+                  alt="Description of Image 3"
+                  className="flex-1 object-contain max-w-[30%] mx-2"
+                />
+              </div>
+              <div className="w-full flex justify-evenly px-0 max-h-[250px] ">
+                <img
+                  src="C-AGILE.png"
+                  alt="Description of Image 4"
+                  className="flex-1 object-cover mx-2 max-w-[250px]"
                 />
                 <img
                   src="Masterbuilders logo.png"
-                  alt="Description of Image 3"
-                  className="flex-1 object-contain max-w-[65%] mx-2"
+                  alt="Description of Image 5"
+                  className="flex-1 object-contain mx-2 max-w-[250px]"
+                />
+                <img
+                  src="C - DEMTOOL.png"
+                  alt="Description of Image 6"
+                  className="flex-1 object-contain mx-2 max-w-[250px]"
                 />
               </div>
+            </div>
+            <div className="text-center flex flex-col items-center">
+              <a
+                className="text-white font-bold py-3 px-8 rounded-full text-4xl focus:outline-none focus:ring-4 focus:ring-purple-300 mb-8 mr-5 max-w-[800px]  w-auto"
+                style={{
+                  backgroundColor: "#383479",
+                  cursor: "pointer", // Add this line to show the pointer cursor
+                  fontStretch: "semi-expanded",
+                }}
+                onClick={openPdfWindow}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.backgroundColor = "#312f6e")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.backgroundColor = "#383479")
+                }
+              >
+                Sponsorship Package
+              </a>
+              <p
+                className="text-white font-"
+                style={{
+                  fontFamily: "'Poppins'",
+                }}
+              >
+                Your brand can be part of our story. Get in touch to discuss
+                sponsorship opportunities.
+              </p>
             </div>
           </div>
         </div>
@@ -221,3 +295,7 @@ const AboutUs: React.FC = () => {
 };
 
 export default AboutUs;
+
+function openPdfWindow() {
+  window.open("Watdig Sponsorship Package (1).pdf", "_blank");
+}

@@ -204,7 +204,7 @@ const Sponsor: React.FC = () => {
         className="text-gray-800 bg-gradient-to-b from-zinc-900 to-zinc-800 py-16 w-full"
       >
         <div className="max-w-7xl mx-auto px-4 lg:px-8 flex items-center h-screen">
-          <div className="sgrid-cols-1 lg:grid-cols-2 gap-4 mt-10">
+          <div className="grid-cols-1 lg:grid-cols-2 gap-4 mt-10">
             {/* Left side content */}
             <div>
               <p
