@@ -22,7 +22,7 @@ const Sponsor: React.FC = () => {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center center",
-    height: "100vh",
+    height: "125vh",
   };
   return (
     <>
@@ -204,33 +204,57 @@ const Sponsor: React.FC = () => {
         className="text-gray-800 bg-gradient-to-b from-zinc-900 to-zinc-800 py-16 w-full"
       >
         <div className="max-w-7xl mx-auto px-4 lg:px-8 flex items-center h-screen">
-          <div className="grid-cols-1 lg:grid-cols-2 gap-4 mt-10">
+          <div className="grid-cols-1 lg:grid-cols-2 gap-4 mt-[200px]">
             {/* Left side content */}
-            <div>
+
+            <div className=" items-center col-span-2">
               <p
-                className="text-white text-left font-bold"
+                className="relative flex items-center w-full my-[10px] mb-[20px]"
                 style={{
-                  fontSize: "30px",
+                  fontSize: "42.2px",
                   color: "#ffffff",
                   fontFamily: "'Poppins', sans-serif",
-                  paddingBottom: "10px",
                 }}
               >
-                Diamond
+                <div className="flex-grow border-t border-white"></div>
+                <span className="px-[10px]  text-white font-bold">Diamond</span>
+                <div className="flex-grow border-t border-white"></div>
               </p>
-              <div className="w-full flex justify-between px-0">
+              <div className="w-full flex justify-between px-0 max-h-[300px] ">
                 <img
-                  src="Onshape logo.png"
+                  src="D - ONSHAPE.png"
                   alt="Description of Image 1"
-                  className="flex-1 object-contain max-w-[65%] mx-2"
+                  className="flex-1 object-contain max-w-[400px] mx-2"
                 />
                 <img
                   src="WEEF Logo.png"
                   alt="Description of Image 2"
-                  className="flex-1 object-contain max-w-[65%] mx-2"
+                  className="flex-1 object-contain max-w-[400px] mx-2 "
+                />
+                <img
+                  src="D - LEDCOR.png"
+                  alt="Description of Image 2"
+                  className="flex-1 object-contain max-w-[400px] mx-2"
                 />
               </div>
+              <div>
+                <p
+                  className="relative flex items-center w-full my-[10px] mb-[20px]"
+                  style={{
+                    fontSize: "42.2px",
+                    color: "#ffffff",
+                    fontFamily: "'Poppins', sans-serif",
+                  }}
+                >
+                  <div className="flex-grow border-t border-white"></div>
+                  <span className="px-[10px]  text-white font-bold">
+                    Gold & Siver
+                  </span>
+                  <div className="flex-grow border-t border-white"></div>
+                </p>
+              </div>
             </div>
+
             <div>
               <p
                 className="text-white text-left font-bold"
@@ -240,29 +264,34 @@ const Sponsor: React.FC = () => {
                   fontFamily: "'Poppins', sans-serif",
                   paddingBottom: "10px",
                 }}
-              >
-                Gold and Silver
-              </p>
-              <div className="w-full flex justify-between px-0">
+              ></p>
+              <div className="w-full flex justify-between px-0 max-h-[200px] items-center">
                 <img
                   src="Masterbuilders logo.png"
                   alt="Description of Image 1"
-                  className="flex-1 object-contain max-w-[20%] mx-2"
+                  className="flex-1 object-fill max-w-[300px] max-h-[150px] mx-2"
                 />
                 <img
-                  src="Mg Chemicals Logo.png"
+                  src="S - MG CHEMICALS.png"
                   alt="Description of Image 2"
-                  className="flex-1 object-contain max-w-[20%] mx-2"
-                />
-                <img
-                  src="Mg Chemicals Logo.png"
-                  alt="Description of Image 2"
-                  className="flex-1 object-contain max-w-[20%] mx-2"
+                  className="flex-1 object-fill max-w-[300px] mx-2"
                 />
                 <img
                   src="EngSoc Logo.png"
                   alt="Description of Image 2"
-                  className="flex-1 object-contain max-w-[10%] mx-2"
+                  className="flex-1 object-fill max-w-[200px] max-h-[200px] mx-2"
+                />
+              </div>
+              <div className="w-full flex justify-evenly px-0 max-h-[300px] ">
+                <img
+                  src="C - DEMTOOL.png"
+                  alt="Description of Image 1"
+                  className="flex-1 object-cover max-w-[50%] mx-2"
+                />
+                <img
+                  src="C-AGILE.png"
+                  alt="Description of Image 2"
+                  className="flex-1 object-cover max-w-[50%] mx-2"
                 />
               </div>
             </div>
