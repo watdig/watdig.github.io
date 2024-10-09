@@ -22,7 +22,7 @@ const AboutUs: React.FC = () => {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center center",
-    height: "130vh",
+    height: "155vh",
   };
 
   return (
@@ -196,7 +196,7 @@ const AboutUs: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="space-y-[50px]">
+          <div className="space-y-[30px]">
             {" "}
             {/*this div contains the sponsors and sponsor button so the spacing can be 50px instead of parent div y-spacing which is 100px */}
             <div className="">
