@@ -1,4 +1,3 @@
-
 const Landing = () => {
   const sectionStyle = {
     backgroundImage: `url('landing_background.png')`,
@@ -19,7 +18,7 @@ const Landing = () => {
           <div className="max-w-md">
             {" "}
             <h1
-              className="text-6xl leading-tight font-bold mb-1"
+              className="text-4xl leading-tight font-bold mb-1"
               style={{
                 color: "#ffffff", // Set text color to white
                 fontFamily: "'Poppins', sans-serif", // Use Poppins font
@@ -27,17 +26,20 @@ const Landing = () => {
             >
               Hello! We are
             </h1>
-            <h1 className="text-9xl font-bold mb-4">WatDig</h1>
+            <img
+              src="1. WATDIG.png"
+              alt="WatDig Logo"
+              className="w-[800px] h-[150px]"
+            />
             <p
-              className="text-xl text-gray-300 mt-6 mb-8"
+              className="text-xl text-gray-300 mt-6 mb-8 w-[700px]"
               style={{
                 color: "#ffffff", // Set text color to white
                 fontFamily: "'Poppins', sans-serif", // Use Poppins font
               }}
             >
               We’re a UW design team competing in the 2025 Not-A-Boring
-              Competition hosted by The Boring Company. Click below to learn
-              more!
+              Competition hosted by The Boring Company. Learn more below!
             </p>
             <a
               href="/about"
@@ -54,7 +56,7 @@ const Landing = () => {
             </a>
             <a
               href="/sponsor"
-              className="text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:ring-4 focus:ring-purple-300 mb-8 mr-5"
+              className="text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:ring-4 focus:ring-purple-300 mb-8 mr-[5rem]"
               style={{ backgroundColor: "#383479" }}
               onMouseEnter={(e) =>
                 (e.currentTarget.style.backgroundColor = "#312f6e")
